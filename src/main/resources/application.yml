@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: momentum-active-shoppe
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/momentum_active_shoppe
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: INFO
