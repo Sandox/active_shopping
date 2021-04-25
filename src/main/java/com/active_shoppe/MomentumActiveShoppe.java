@@ -50,7 +50,7 @@ public class MomentumActiveShoppe implements CommandLineRunner {
        // product.setProductCode("P2");
         ProductModel productModel = new ProductModel();
         productModel.setProductCode(product.getProductCode());
-        productModel.setProductCost(product.getProductCost());
+        productModel.setProductCost(product.getProductCost() < 0 ? 0 : product.getProductCost());
         productModel.setProductName(product.getProductName());
         productRepository.save(productModel);
     }
