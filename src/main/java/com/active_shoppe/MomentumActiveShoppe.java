@@ -43,7 +43,7 @@ public class MomentumActiveShoppe implements CommandLineRunner {
         HashMap<String, ProductDTO> products = new HashMap<>();
         ProductDTO product = new ProductDTO();
         product.setProductCode("P1");
-        product.setProductCost(10); // Cost of the product
+        product.setProductCost(100); // Cost of the product
         product.setProductName("Product Name");
         products.put("p1", product);
 
@@ -68,7 +68,7 @@ public class MomentumActiveShoppe implements CommandLineRunner {
         customerActiveDaysRepository.deleteAll();
         CustomerActiveDaysModel customerActiveDaysModel = new CustomerActiveDaysModel();
         customerActiveDaysModel.setCustomerId(customerId);
-        customerActiveDaysModel.setProductCost(10); // avaiable balance that customer has
+        customerActiveDaysModel.setProductCost(1000); // avaiable balance that customer has
         customerActiveDaysRepository.save(customerActiveDaysModel);
     }
 
